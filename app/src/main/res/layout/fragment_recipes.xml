@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MyRecipes"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:focusable="true">
+
+<!--
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myRecipeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:id="@+id/setting"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/setting"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+-->
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <ImageView
+            android:id="@+id/imgUserPic"
+            android:layout_width="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:layout_height="50sp"
+            android:foregroundGravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/portrait_photo" />
+
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Username"
+        android:textSize="17sp"
+        android:textColor="@color/grey_700"
+        android:layout_below="@id/imgUserPic"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="@null"
+        android:clickable="true"
+        android:maxLines="1"
+        android:maxLength="20"/>
+
+    <fragment
+        android:id="@+id/tabRecipes"
+        android:name="com.example.chenrui.easycook.TabRecipes"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textView"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:useCompatPadding="true"
+        android:layout_margin="8sp"
+        android:src="@drawable/creat_recipe"
+        app:backgroundTint="@color/check_color"
+        app:elevation="6dp"
+        app:fabSize="normal"/>
+
+</RelativeLayout>

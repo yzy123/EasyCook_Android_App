@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:layout_margin="10sp"
+
+    tools:context=".ShoppingListFragment">
+
+
+    <ImageView
+        android:id="@+id/shopping_list"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:src="@drawable/shopping_list" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="315dp"
+        android:layout_height="325dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/shopping_list"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_marginBottom="6sp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/nolist"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/shopping_list"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="italic"-->
+        <!--android:layout_margin="5sp"-->
+        <!--android:textColor="@color/grey_500"/>-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10sp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/check_color"
+        app:elevation="6dp"
+        app:fabSize="normal"/>
+
+</RelativeLayout>
